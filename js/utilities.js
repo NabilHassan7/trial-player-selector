@@ -23,3 +23,10 @@ function disableSelectButton(elementId){
     document.getElementById(elementId).setAttribute("style", "background-color: #A2A9AF;");
     document.getElementById(elementId).setAttribute("disabled", true);
 }
+
+function updateListHeaderNumber(){
+    const selectedPlayers = document.querySelectorAll('li');
+    const numberOfSelectedPlayers = selectedPlayers.length;
+    const currentSelectedPlayers = document.getElementById('current-selected-players');
+    currentSelectedPlayers.innerText = numberOfSelectedPlayers;
+}
