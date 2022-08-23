@@ -70,13 +70,13 @@ function inputValueValidator(elementId, elementValue){
     else if(elementValue < 0){
         const emptyString = ' ';
         setElementValueNumberById(elementId,emptyString);
-        alert('Budget cannot be a negative number.');
+        alert('Input cannot be a negative number.');
         return false;
     }
     else if(elementValue === ' '){
         const emptyString = ' ';
         setElementValueNumberById(elementId,emptyString);
-        alert('Please enter a number in the cost per player field');
+        alert('Please enter a number in the input field');
         return false;
     }
     else{
