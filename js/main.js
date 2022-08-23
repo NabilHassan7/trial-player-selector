@@ -107,13 +107,18 @@ document.getElementById('btn-select-9').addEventListener('click',function(){
 })
 
 document.getElementById('calculate-budget').addEventListener('click', function(){
+    
     const selectedPlayerNumber = getPlayerListLength();
 
     const costPerPlayer = getElementValueById('per-player-budget');
+ 
+    const inputValidation = inputValueValidator('per-player-budget',costPerPlayer);
 
-    const calculatedBudget = selectedPlayerNumber * costPerPlayer;
+    if(inputValidation){
+        const calculatedBudget = selectedPlayerNumber * costPerPlayer;
 
-    setElementValueById('player-budget-output', calculatedBudget);
+        setElementValueById('player-budget-output', calculatedBudget);
+    }
  })
 
  document.getElementById('calculate-total').addEventListener('click',function(){
@@ -121,6 +126,11 @@ document.getElementById('calculate-budget').addEventListener('click', function()
     const coachCost = getElementValueById('coach-cost');
     const playerBudget = getElementStringValueById('player-budget-output');
 
-    const calculatedTotal = managerCost + coachCost + playerBudget;
-    setElementValueById('final-total',calculatedTotal);
+    const inputValidationManagerCost = inputValueValidator('manager-cost',managerCost);
+    const inputValidationCoachCost = inputValueValidator('coach-cost',coachCost);
+
+    if(inputValidationManagerCost && inputValidationCoachCost){
+        const calculatedTotal = managerCost + coachCost + playerBudget;
+        setElementValueById('final-total',calculatedTotal);
+    }
  })
