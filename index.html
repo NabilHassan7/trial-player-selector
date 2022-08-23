@@ -4,16 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Adding flavicon to title bar -->
     <link rel="shortcut icon" href="./images/football.ico" type="image/x-icon">
+
+    <!-- Linking Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Linking font awesome kit -->
     <script src="https://kit.fontawesome.com/215a25c64e.js" crossorigin="anonymous"></script>
 
+    <!-- Importing goole fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+
     <title>Fantasy Football Manager</title>
 </head>
 <body class="bg-gray-900">
+    <!-- header section start -->
     <header>
         <section class="bg-black flex justify-center">
             <div class="mr-10">
@@ -31,7 +40,9 @@
         </section>
     </header>
 
+    <!-- main section start -->
     <main class="flex justify-center mt-8"> 
+        <!-- start of player cards section -->
         <section class="grid grid-cols-4 gap-4">
             <div class="col-span-3 grid overflow-hidden grid-cols-3 grid-rows-3 gap-2">
                 <div class="bg-black h-60 w-44 text-center border border-1 border-stone-400 text-white">
@@ -89,13 +100,17 @@
                     <button id="btn-select-9" class="font-bold text-base my-2 bg-blue-900 py-1 px-11"><p>SELECT</p></button>
                 </div>
             </div>
+
+            <!-- start of calculations section -->
             <div class="col-span-1 grid overflow-hidden grid-cols-1 grid-rows-3 gap-2">
+                <!-- selected players list -->
                 <div class="bg-black h-60 w-50 box row-span-1">
                     <h1 class="text-white text-2xl text-center my-2">Selected - <span id="current-selected-players">0</span></h1>
                     <ol id="selected-players" class="list-decimal list-inside text-white text-center space-y-3">
                         
                     </ol>
                 </div>
+                <!-- budget calculation -->
                 <div class="bg-black h-120 w-50 box row-span-2 text-white flex flex-col items-center">
                     <h1 class="text-2xl text-center my-2 mb-5">Budget</h1>
                     <div class="mb-5">
@@ -125,8 +140,10 @@
         </section>
     </main>
 
+    <!-- start of footer section -->
     <footer class="p-10 mt-8 bg-black shadow flex items-center justify-between">
         <span class="text-sm text-gray-500">Copyright © 2022 All Rights Reserved</span>
+        <!-- social links -->
         <div class="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
             <div>
                 <a href="https://github.com/" target="_blank" class="mr-4 md:mr-6 "><i class="fa-brands fa-github"></i></a>
@@ -143,6 +160,7 @@
         </div>
     </footer>
 
+    <!-- linking javascript file -->
     <script src="./js/utilities.js"></script>
     <script src="./js/main.js"></script>
 </body>

@@ -1,3 +1,4 @@
+// player card select button section 
 document.getElementById('btn-select-1').addEventListener('click',function(){
     if(selectedPlayerNumberVerifier()){
         alert('You have reached maximum number of selectable players. Cannot add more');
@@ -106,6 +107,7 @@ document.getElementById('btn-select-9').addEventListener('click',function(){
     }
 })
 
+// Player Budget Calculation
 document.getElementById('calculate-budget').addEventListener('click', function(){
     
     const selectedPlayerNumber = getPlayerListLength();
@@ -121,6 +123,7 @@ document.getElementById('calculate-budget').addEventListener('click', function()
     }
  })
 
+ // Total expenses calculation
  document.getElementById('calculate-total').addEventListener('click',function(){
     const managerCost = getElementValueById('manager-cost');
     const coachCost = getElementValueById('coach-cost');
