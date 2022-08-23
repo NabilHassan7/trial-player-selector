@@ -1,6 +1,6 @@
 document.getElementById('btn-select-1').addEventListener('click',function(){
     if(selectedPlayerNumberVerifier()){
-        alert('Cannot add more players');
+        alert('You have reached maximum number of selectable players. Cannot add more');
         return;
     }
     else{
@@ -12,7 +12,7 @@ document.getElementById('btn-select-1').addEventListener('click',function(){
 
 document.getElementById('btn-select-2').addEventListener('click',function(){
     if(selectedPlayerNumberVerifier()){
-        alert('Cannot add more players');
+        alert('You have reached maximum number of selectable players. Cannot add more');
         return;
     }
     else{
@@ -24,7 +24,7 @@ document.getElementById('btn-select-2').addEventListener('click',function(){
 
 document.getElementById('btn-select-3').addEventListener('click',function(){
     if(selectedPlayerNumberVerifier()){
-        alert('Cannot add more players');
+        alert('You have reached maximum number of selectable players. Cannot add more');
         return;
     }
     else{
@@ -36,7 +36,7 @@ document.getElementById('btn-select-3').addEventListener('click',function(){
 
 document.getElementById('btn-select-4').addEventListener('click',function(){
     if(selectedPlayerNumberVerifier()){
-        alert('Cannot add more players');
+        alert('You have reached maximum number of selectable players. Cannot add more');
         return;
     }
     else{
@@ -48,7 +48,7 @@ document.getElementById('btn-select-4').addEventListener('click',function(){
 
 document.getElementById('btn-select-5').addEventListener('click',function(){
     if(selectedPlayerNumberVerifier()){
-        alert('Cannot add more players');
+        alert('You have reached maximum number of selectable players. Cannot add more');
         return;
     }
     else{
@@ -60,7 +60,7 @@ document.getElementById('btn-select-5').addEventListener('click',function(){
 
 document.getElementById('btn-select-6').addEventListener('click',function(){
     if(selectedPlayerNumberVerifier()){
-        alert('Cannot add more players');
+        alert('You have reached maximum number of selectable players. Cannot add more');
         return;
     }
     else{
@@ -72,7 +72,7 @@ document.getElementById('btn-select-6').addEventListener('click',function(){
 
 document.getElementById('btn-select-7').addEventListener('click',function(){
     if(selectedPlayerNumberVerifier()){
-        alert('Cannot add more players');
+        alert('You have reached maximum number of selectable players. Cannot add more');
         return;
     }
     else{
@@ -84,7 +84,7 @@ document.getElementById('btn-select-7').addEventListener('click',function(){
 
 document.getElementById('btn-select-8').addEventListener('click',function(){
     if(selectedPlayerNumberVerifier()){
-        alert('Cannot add more players');
+        alert('You have reached maximum number of selectable players. Cannot add more');
         return;
     }
     else{
@@ -96,7 +96,7 @@ document.getElementById('btn-select-8').addEventListener('click',function(){
 
 document.getElementById('btn-select-9').addEventListener('click',function(){
     if(selectedPlayerNumberVerifier()){
-        alert('Cannot add more players');
+        alert('You have reached maximum number of selectable players. Cannot add more');
         return;
     }
     else{
