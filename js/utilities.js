@@ -1,6 +1,12 @@
+function getPlayerListLength(){
+    const selectedPlayers = document.querySelectorAll('li');
+    const numberOfSelectedPlayers = selectedPlayers.length;
+    return numberOfSelectedPlayers;
+}
+
 function selectedPlayerNumberVerifier(){
-    const numberOfSelectedPlayers = document.querySelectorAll('li');
-    if(numberOfSelectedPlayers.length >= 5){
+    const numberOfSelectedPlayers = getPlayerListLength();
+    if(numberOfSelectedPlayers >= 5){
         return true;
     }
     else{
@@ -25,8 +31,26 @@ function disableSelectButton(elementId){
 }
 
 function updateListHeaderNumber(){
-    const selectedPlayers = document.querySelectorAll('li');
-    const numberOfSelectedPlayers = selectedPlayers.length;
+    const numberOfSelectedPlayers = getPlayerListLength();
     const currentSelectedPlayers = document.getElementById('current-selected-players');
     currentSelectedPlayers.innerText = numberOfSelectedPlayers;
+}
+
+function getElementValueById(elementId){
+    const selectedElementField = document.getElementById(elementId);
+    const selectedElementString = selectedElementField.value;
+    const selectedElement = parseInt(selectedElementString);
+    return selectedElement;
+}
+
+function getElementStringValueById(elementId){
+    const selectedElementField = document.getElementById(elementId);
+    const selectedElementString = selectedElementField.innerText;
+    const selectedElement = parseInt(selectedElementString);
+    return selectedElement;
+}
+
+function setElementValueById(elementId, value){
+    const selectedElementField = document.getElementById(elementId);
+    selectedElementField.innerText = value;
 }

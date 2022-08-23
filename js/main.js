@@ -105,3 +105,22 @@ document.getElementById('btn-select-9').addEventListener('click',function(){
         updateListHeaderNumber();
     }
 })
+
+document.getElementById('calculate-budget').addEventListener('click', function(){
+    const selectedPlayerNumber = getPlayerListLength();
+
+    const costPerPlayer = getElementValueById('per-player-budget');
+
+    const calculatedBudget = selectedPlayerNumber * costPerPlayer;
+
+    setElementValueById('player-budget-output', calculatedBudget);
+ })
+
+ document.getElementById('calculate-total').addEventListener('click',function(){
+    const managerCost = getElementValueById('manager-cost');
+    const coachCost = getElementValueById('coach-cost');
+    const playerBudget = getElementStringValueById('player-budget-output');
+
+    const calculatedTotal = managerCost + coachCost + playerBudget;
+    setElementValueById('final-total',calculatedTotal);
+ })
