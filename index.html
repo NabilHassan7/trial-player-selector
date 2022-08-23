@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/215a25c64e.js" crossorigin="anonymous"></script>
     <title>Select Best Five</title>
 </head>
 <body class="bg-gray-900">
@@ -76,33 +77,33 @@
                 </div>
             </div>
             <div class="col-span-1 grid overflow-hidden grid-cols-1 grid-rows-3 gap-2">
-                <div class="bg-black h-60 w-44 box row-span-1">
+                <div class="bg-black h-60 w-50 box row-span-1">
                     <h1 class="text-white text-2xl text-center my-2">Selected - <span id="current-selected-players">0</span></h1>
                     <ol id="selected-players" class="list-decimal list-inside text-white text-center space-y-3">
                         
                     </ol>
                 </div>
-                <div class="bg-black h-120 w-44 box row-span-2 text-white flex flex-col items-center">
-                    <h1 class="text-2xl text-center my-2">Budget</h1>
-                    <div>
+                <div class="bg-black h-120 w-50 box row-span-2 text-white flex flex-col items-center">
+                    <h1 class="text-2xl text-center my-2 mb-5">Budget</h1>
+                    <div class="mb-5">
                         <span class="text-xs pl-3 pr-3">Per Player</span>
-                        <input class="w-20 bg-black border border-white-1" type="text" name="" id="per-player-budget">
+                        <input class="w-20 bg-black border border-white-1 text-center" type="text" name="" id="per-player-budget">
                     </div>
-                    <button id="calculate-budget" class="font-bold text-base my-2 bg-blue-900 py-1 px-11"><p>Calculate</p></button>
-                    <div>
+                    <button id="calculate-budget" class="font-bold text-base my-2 bg-blue-900 py-1 px-11 mb-5"><p>Calculate</p></button>
+                    <div class="mb-5">
                         <span class="text-xs pl-2 pr-3">Player Expenses</span>
                         <span>$<span id="player-budget-output" class="text-xs">0</span></span>
                     </div>
-                    <div>
+                    <div class="mb-5">
                         <span class="text-xs pl-3 pr-3">Manager</span>
-                        <input class="w-20 bg-black border border-white-1" type="text" name="" id="manager-cost">
+                        <input class="w-20 bg-black border border-white-1 text-center" type="text" name="" id="manager-cost">
                     </div>
-                    <div>
+                    <div class="mb-5">
                         <span class="text-xs pl-3 pr-6">Coach</span>
-                        <input class="w-20 bg-black border border-white-1" type="text" name="" id="coach-cost">
+                        <input class="w-20 bg-black border border-white-1 text-center" type="text" name="" id="coach-cost">
                     </div>
-                    <button id="calculate-total" class="font-bold text-base my-2 bg-blue-900 py-1 px-6"><p>Calculate Total</p></button>
-                    <div>
+                    <button id="calculate-total" class="font-bold text-base my-2 bg-blue-900 py-1 px-6 mb-5"><p>Calculate Total</p></button>
+                    <div class="mb-5">
                         <span class="text-xs pl-2 pr-3">Total</span>
                         <span>$<span id="final-total" class="text-xs text-orange-600">0</span></span>
                     </div>
@@ -110,6 +111,24 @@
             </div>
         </section>
     </main>
+
+    <footer class="p-4 mt-8 bg-black shadow flex items-center justify-between">
+        <span class="text-sm text-gray-500">© 2022 All Rights Reserved.</span>
+        <div class="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
+            <div>
+                <a href="https://github.com/" target="_blank" class="mr-4 md:mr-6 "><i class="fa-brands fa-github"></i></a>
+            </div>
+            <div>
+                <a href="https://www.facebook.com/" target="_blank" class="mr-4 md:mr-6"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+            <div>
+                <a href="https://twitter.com/?lang=en" target="_blank" class="mr-4 md:mr-6"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <div>
+                <a href="https://bd.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
 
     <script src="./js/utilities.js"></script>
     <script src="./js/main.js"></script>
